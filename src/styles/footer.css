@@ -1,0 +1,31 @@
+.app-footer {
+  background: var(--green-900);
+  color: rgba(255, 255, 255, 0.78);
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  font-size: var(--text-xs);
+  line-height: 1.7;
+  margin-top: auto;
+}
+
+.app-footer p:first-child {
+  color: var(--mint-300);
+  font-weight: var(--weight-semibold);
+}
+
+.lab-fallback {
+  text-align: center;
+  padding-top: var(--space-16);
+}
+
+.lab-fallback p:first-child {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--green-700);
+}
+
+.lab-fallback__note {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}

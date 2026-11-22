@@ -1,0 +1,125 @@
+/* ============================================================
+   The Living Motion Atlas — Design Tokens
+   ============================================================ */
+
+:root {
+  /* --- Palette : Verts --- */
+  --green-900: #062b20;
+  --green-800: #0b3d2e;
+  --green-700: #0e4a38;
+  --green-600: #146248;
+  --green-500: #1a7a5a;
+  --mint-500: #2ed573;
+  --mint-400: #4fe08d;
+  --mint-300: #86efac;
+  --mint-100: #e3fbee;
+  --mint-050: #f2fdf6;
+
+  /* --- Palette : Neutres & fonds --- */
+  --cream: #f7f6f1;
+  --cream-soft: #fbfaf6;
+  --white: #ffffff;
+  --ink: #12211b;
+  --ink-soft: #3d4f47;
+  --ink-muted: #6b7c74;
+  --line: #e2e6e1;
+  --line-strong: #c9d1cb;
+
+  /* --- Palette : Environnement 3D (nuit) --- */
+  --night-900: #060e1a;
+  --night-800: #0a1628;
+  --night-700: #0f2038;
+  --night-600: #16304f;
+  --night-500: #1f4066;
+  --night-glow: #58c4ff;
+
+  /* --- Sémantique --- */
+  --danger: #d64545;
+  --danger-soft: #fdecec;
+  --warning: #b45309;
+  --warning-soft: #fef3e2;
+  --success: var(--mint-500);
+  --success-soft: var(--mint-100);
+  --info-soft: #e8f1ff;
+
+  /* --- Typographie --- */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.55;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* --- Espacement --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* --- Rayons --- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 999px;
+
+  /* --- Ombres --- */
+  --shadow-sm: 0 1px 2px rgba(10, 30, 22, 0.06), 0 1px 3px rgba(10, 30, 22, 0.05);
+  --shadow-md: 0 4px 12px rgba(10, 30, 22, 0.08), 0 2px 4px rgba(10, 30, 22, 0.05);
+  --shadow-lg: 0 12px 32px rgba(10, 30, 22, 0.12), 0 4px 8px rgba(10, 30, 22, 0.06);
+  --shadow-xl: 0 24px 56px rgba(6, 43, 32, 0.18);
+  --shadow-glow: 0 0 0 4px rgba(46, 213, 115, 0.25);
+
+  /* --- Transitions --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+
+  /* --- Z-index --- */
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* --- Layout --- */
+  --header-height: 64px;
+  --content-max: 1280px;
+  --sidebar-width: 300px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}
+
+[data-motion='reduced'] {
+  --duration-fast: 0ms;
+  --duration-base: 0ms;
+  --duration-slow: 0ms;
+}

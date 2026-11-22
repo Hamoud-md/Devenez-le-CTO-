@@ -1,0 +1,43 @@
+.progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.progress__label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.progress__track {
+  flex: 1;
+  height: 10px;
+  background: var(--line);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.progress__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--green-600), var(--green-500));
+  transition: width var(--duration-slow) var(--ease-out);
+}
+
+.progress__track--mint .progress__fill {
+  background: linear-gradient(90deg, var(--mint-500), var(--mint-400));
+}
+
+.progress__value {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--green-700);
+  background: var(--mint-100);
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
